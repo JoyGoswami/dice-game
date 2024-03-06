@@ -21,23 +21,23 @@
     </div>
     <main class="player-container">
       <!-- player 1 -->
+      <div class="players" id="player--0">
+        <h2 class="player-name-0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <!-- current score container -->
+        <div class="current-score-cont">
+          <h3 class="current-label">Current Score</h3>
+          <h3 class="current-score" id="current--0">0</h3>
+        </div>
+      </div>
+      <!-- player 2 -->
       <div class="players" id="player--1">
-        <h2 class="player-name">Player 1</h2>
+        <h2 class="player-name-1">Player 2</h2>
         <p class="score" id="score--1">0</p>
         <!-- current score container -->
         <div class="current-score-cont">
           <h3 class="current-label">Current Score</h3>
           <h3 class="current-score" id="current--1">0</h3>
-        </div>
-      </div>
-      <!-- player 2 -->
-      <div class="players" id="player--2">
-        <h2 class="player-name">Player 2</h2>
-        <p class="score" id="score--2">0</p>
-        <!-- current score container -->
-        <div class="current-score-cont">
-          <h3 class="current-label">Current Score</h3>
-          <h3 class="current-score" id="current--2">0</h3>
         </div>
       </div>
     </main>
@@ -72,11 +72,12 @@
           </div>
           <div class="form-player">
             <label for="input-name-1">Player 2</label>
-            <input type="text" name="input-name-1" id="input-name-1" />
+            <input type="text" name="input-name-1" id="input-name-2" />
           </div>
         </div>
-        <input class="action-btn done" type="button" value="Done" />
+        <input class="action-btn done-button" type="button" value="Done" />
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
