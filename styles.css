@@ -92,20 +92,27 @@ body {
   color: #391906;
   border: none;
   background-color: rgba(255, 208, 52, 0.53);
-  border-radius: 8px;
+  border-radius: 2px;
   display: block;
   margin: 1rem auto;
   cursor: pointer;
 }
 
 /* instruction */
-.instruction {
+.instructionel {
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.822);
+  filter: blur(10px);
+}
+.absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
 .heading {
   color: white;
@@ -113,6 +120,34 @@ body {
   padding: 4rem 0rem 2rem;
   font-size: 48px;
 }
-.instruction ul {
+.instruction-content ul {
   padding: 2rem;
+  color: white;
+}
+.instruction-content ul li {
+  margin: 0.4rem 0rem;
+}
+/* set name  */
+.set-name-content {
+  color: white;
+}
+.form-cont {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 1rem;
+}
+.form-player {
+  flex: 0 1 50%;
+  text-align: center;
+}
+.form-player input {
+  outline: none;
+  width: 95%;
+  height: 30px;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+/* hidden */
+.hidden {
+  display: none;
 }

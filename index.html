@@ -48,7 +48,35 @@
       <button class="action-btn roll-btn">Roll Dice</button>
       <button class="action-btn hold-btn">Hold</button>
     </div>
+    <!-- common panel for instruction and set name -->
+    <div class="instructionel"></div>
     <!-- instruction  -->
-    <div class="instruction"></div>
+    <div class="instruction-content absolute hidden">
+      <h1 class="heading">Instruction</h1>
+      <ul>
+        <li>Roll the dice and scores will be added to current score</li>
+        <li>When you hold current scores will be added to you main score</li>
+        <li>A player will lose all this current score if he roll 1</li>
+        <li>The first player who can score 100 will be the winner</li>
+      </ul>
+      <button class="action-btn close-btn">Close</button>
+    </div>
+    <!-- set name  -->
+    <div class="set-name-content absolute">
+      <h1 class="heading">Set Name</h1>
+      <form action="">
+        <div class="form-cont">
+          <div class="form-player">
+            <label for="input-name-1">Player 1</label>
+            <input type="text" name="input-name-1" id="input-name-1" />
+          </div>
+          <div class="form-player">
+            <label for="input-name-1">Player 2</label>
+            <input type="text" name="input-name-1" id="input-name-1" />
+          </div>
+        </div>
+        <input class="action-btn done" type="button" value="Done" />
+      </form>
+    </div>
   </body>
 </html>
