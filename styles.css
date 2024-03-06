@@ -43,7 +43,7 @@ body {
 }
 /* main  */
 .player-container {
-  margin-top: 4rem;
+  margin-top: 1rem;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -78,11 +78,11 @@ body {
   width: 100%;
   display: inline-block;
   text-align: center;
-  margin: 1rem 0rem;
+  margin: 0.5rem 0rem;
 }
 .dice {
-  height: 84px;
-  width: 84px;
+  height: 74px;
+  width: 74px;
 }
 /* action buttons */
 .action-btn {
