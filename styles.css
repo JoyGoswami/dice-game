@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  /* background: linear-gradient() url("assets/bg.jpg") center/cover no-repeat; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* title */
+.title {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #dc4718;
+  font-size: 64px;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+/* top button  */
+.top-btn {
+  text-align: center;
+}
+.btn {
+  height: 23px;
+  width: 119px;
+  color: #ffce34;
+  background-color: #572101;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:nth-child(1) {
+  margin-right: 2rem;
+}
+/* main  */
+.player-container {
+  margin-top: 4rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.players {
+  flex: 0 1 49%;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+}
+.player-name {
+  color: #dc4718;
+  font-size: 24px;
+}
+.score {
+  font-size: 32px;
+  color: #ffce34;
+  margin: 1rem 0rem;
+}
+.current-score-cont {
+  background-color: rgba(184, 106, 50, 0.2);
+  color: #ffce34;
+  padding: 1rem 0rem;
+}
+.current-label {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+/* dice  */
+.dice-cont {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+.dice {
+  height: 84px;
+  width: 84px;
+}
+/* action buttons */
+.action-btn {
+  height: 30px;
+  width: 131px;
+  font-size: 20px;
+  color: #391906;
+  border: none;
+  background-color: rgba(255, 208, 52, 0.53);
+  border-radius: 8px;
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+/* instruction */
+.instruction {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.heading {
+  color: white;
+  text-align: center;
+  padding: 4rem 0rem 2rem;
+  font-size: 48px;
+}
+.instruction ul {
+  padding: 2rem;
+}

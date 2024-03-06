@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="title">Dice Roller</h1>
+    <div class="top-btn">
+      <button class="btn set-name">Set Name</button>
+      <button class="btn instruction">Instruction</button>
+    </div>
+    <main class="player-container">
+      <!-- player 1 -->
+      <div class="players" id="player--1">
+        <h2 class="player-name">Player 1</h2>
+        <p class="score" id="score--1">0</p>
+        <!-- current score container -->
+        <div class="current-score-cont">
+          <h3 class="current-label">Current Score</h3>
+          <h3 class="current-score" id="current--1">0</h3>
+        </div>
+      </div>
+      <!-- player 2 -->
+      <div class="players" id="player--2">
+        <h2 class="player-name">Player 2</h2>
+        <p class="score" id="score--2">0</p>
+        <!-- current score container -->
+        <div class="current-score-cont">
+          <h3 class="current-label">Current Score</h3>
+          <h3 class="current-score" id="current--2">0</h3>
+        </div>
+      </div>
+    </main>
+    <din class="dice-cont">
+      <img src="assets/dice--1.png" alt="Dice" class="dice" />
+    </din>
+    <div class="action-btn-group">
+      <button class="action-btn roll-btn">Roll Dice</button>
+      <button class="action-btn hold-btn">Hold</button>
+    </div>
+    <!-- instruction  -->
+    <div class="instruction"></div>
+  </body>
+</html>
