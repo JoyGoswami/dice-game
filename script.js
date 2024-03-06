@@ -1,5 +1,5 @@
 "use strict";
-
+//Modal windows
 // buttons
 const instructionBtn = document.querySelector(".instruction");
 const closeBtn = document.querySelector(".close-btn");
@@ -46,4 +46,52 @@ doneBtn.addEventListener("click", function () {
   //empty the input fields
   inputName1.value = "";
   inputName2.value = "";
+});
+
+// main game
+
+// buttons
+const rollBtn = document.querySelector(".roll-btn");
+const holdBtn = document.querySelector(".hold-btn");
+
+// elements
+const dice = document.querySelector(".dice");
+let currentScoreEl0 = document.getElementById("current--0");
+let currentScoreEl1 = document.getElementById("current--1");
+
+//initial settings
+let currentScore = 0;
+let currentPlayer = 0;
+
+dice.classList.add("hidden");
+
+// event listeners
+rollBtn.addEventListener("click", () => {
+  const randomDice = Math.trunc(Math.random() * 6) + 1;
+
+  dice.classList.remove("hidden");
+  dice.src = `assets/dice--${randomDice}.png`;
+
+  if (randomDice !== 1) {
+    currentScore += randomDice;
+    document.getElementById(`current--${currentPlayer}`).textContent =
+      currentScore;
+    //display active player
+    document
+      .getElementById(`player--${currentPlayer}`)
+      .classList.add("active-player");
+  } else {
+    //reset value before switching to another player
+    document
+      .getElementById(`player--${currentPlayer}`)
+      .classList.remove("active-player");
+    currentScore = 0;
+    document.getElementById(`current--${currentPlayer}`).textContent = 0;
+    // switch PLayer
+    currentPlayer = currentPlayer === 0 ? 1 : 0;
+    //display active player
+    document
+      .getElementById(`player--${currentPlayer}`)
+      .classList.add("active-player");
+  }
 });
