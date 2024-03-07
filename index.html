@@ -22,7 +22,7 @@
     <main class="player-container">
       <!-- player 1 -->
       <div class="players active-player" id="player--0">
-        <h2 class="player-name-0">Player 1</h2>
+        <h2 class="player-name-0" id="player-name-0">Player 1</h2>
         <p class="score" id="score--0">0</p>
         <!-- current score container -->
         <div class="current-score-cont">
@@ -32,7 +32,7 @@
       </div>
       <!-- player 2 -->
       <div class="players" id="player--1">
-        <h2 class="player-name-1">Player 2</h2>
+        <h2 class="player-name-1" id="player-name-1">Player 2</h2>
         <p class="score" id="score--1">0</p>
         <!-- current score container -->
         <div class="current-score-cont">
@@ -77,6 +77,12 @@
         </div>
         <input class="action-btn done-button" type="button" value="Done" />
       </form>
+    </div>
+    <!-- Winner window -->
+    <div class="players winner hidden" id="player--0">
+      <h2 class="win-heading">Winner Winner</h2>
+      <h1 class="win-msg">Player 1 Won</h1>
+      <button class="action-btn reset">Reset</button>
     </div>
     <script src="script.js"></script>
   </body>
