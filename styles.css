@@ -11,7 +11,6 @@ body {
     url("assets/bg.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
 }
 
 /* title */
@@ -42,6 +41,9 @@ body {
   margin-right: 2rem;
 }
 /* main  */
+main {
+  position: relative;
+}
 .player-container {
   margin-top: 1rem;
   padding: 1rem;
@@ -54,6 +56,9 @@ body {
   border-radius: 20px;
   padding: 1rem;
   text-align: center;
+}
+.players h2 {
+  color: #dc4718;
 }
 .player-name {
   color: #dc4718;
@@ -174,7 +179,7 @@ body {
   }
   .dice-cont {
     position: absolute;
-    top: 276px;
+    top: 29%;
   }
   .dice {
     height: 84px;
@@ -210,7 +215,7 @@ body {
   }
   .action-btn-group {
     position: absolute;
-    top: 421px;
+    top: 65%;
     right: 50%;
     transform: translateX(50%);
   }
